@@ -1,0 +1,161 @@
+html {
+  font-size: 10px;
+}
+
+#main-nav {
+  margin-bottom: 0;
+}
+
+body {
+  font-family: "Helvetica Neue", Arial, Helvetica, sans-serif;
+  font-size: 14px;
+  line-height: 1.42857143;
+  color: #333;
+  background-color: #fff;
+  margin: 0;
+}
+
+.main-content {
+  position: relative;
+}
+
+.content-background {
+  position: relative;
+  margin-left: -15px;
+  margin-right: -15px;
+}
+
+.img-responsive {
+  width: 100%;
+}
+
+.info-wrapper {
+  position: relative;
+  border-top: 4px solid #ff0500;
+  padding: 15px 30px 25px 0;
+}
+
+@media (min-width: 768px) {
+  .info-wrapper {
+    background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.5) 0, #fff 50%, #fff 100%);
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+  }
+}
+
+.category-main {
+  font: 16px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #ff0500;
+}
+
+a {
+  color: inherit;
+}
+
+.story {
+  text-align: center;
+  text-transform: uppercase;
+  color: black;
+}
+
+.summary {
+  text-align: center;
+}
+
+.main-horizontal-divider {
+  border-top: 1px solid #f2f2f2;
+}
+
+@media (max-width: 767px) {
+  .sub-box {
+    height: 630px;
+  }
+}
+
+.sub.box {
+  margin-top: 15px;
+  border-bottom: 1px solid #f2f2f2;
+}
+
+.vertical-divider {
+  border-right: 1px solid #f2f2f2;
+}
+
+.img-responsive {
+  width: 100%;
+}
+
+.category-main {
+  font: 16px;
+  color: #FF0500;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+a {
+  color: inherit;
+}
+
+.story {
+  text-align: center;
+  color: black;
+  text-transform: uppercase;
+}
+
+.summary {
+  text-align: center;
+}
+
+@media (max-width: 767px) {
+  .sub-box {
+    height: 630px;
+  }
+}
+
+.sub-box {
+  margin-top: 15px;
+  border-bottom: 1px solid #f2f2f2;
+}
+
+@media (max-width: 767px) {
+  #blue-background {
+    height: 615px;
+  }
+}
+
+#blue-background {
+  border: 1px solid #cdf0ff;
+  background-color: #e6ffff;
+}
+
+.category-main.blue {
+  color: #00b7FF;
+}
+
+.category-main {
+  font: 16px;
+  color: #FF0500;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.story {
+  text-transform: uppercase;
+  color: black;
+  text-align: center;
+}
+
+.summary {
+  text-align: center;
+}
+
+@media (max-width: 992px) {
+  .sidebar {
+    background-color: #f7f7f7;
+    border-top: 1px solid #e5e5e5;
+  }
+}
