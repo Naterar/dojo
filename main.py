@@ -1,29 +1,22 @@
-alphabet = 'abcdefghijklmnopqrstuvwxyz '
+from replit import clear
+from art import logo
 
-direction = input("Type 'encode' to encrypt, type 'decode' to decrypt:\n")
-text = input("Type your message:\n").lower()
-shift = int(input("Type the shift number:\n"))
+print(logo)
 
-def transform_text(text, shift_amount):
-    transformed_text = ""
-    for letter in text:
-        if letter in alphabet:
-            position = alphabet.index(letter)
-            new_position = (position + shift_amount) % len(alphabet)
-            transformed_text += alphabet[new_position]
-        else:
-            transformed_text += letter
-    return transformed_text
+bids = {}
 
-def encrypt(plain_text, shift_amount):
-    cipher_text = transform_text(plain_text, shift_amount)
-    print(f"The encoded text is {cipher_text}")
+def find_highest_bidder(bidding_record):
+  highest_bid = max(bidding_record.values())
+  winner = max(bidding_record, key=bidding_record.get)
+  print(f"The winner is {winner} with a bid of ${highest_bid}")
 
-def decrypt(cipher_text, shift_amount):
-    plain_text = transform_text(cipher_text, -shift_amount)
-    print(f"The decoded text is {plain_text}")
+while True:
+  name = input("What is your name? ")
+  price = int(input("What is your bid? "))
+  bids[name] = price
+  should_continue = input("Are there any other bidders? Type 'yes' or 'no'. ")
+  if should_continue == "no":
+    break
+  clear()
 
-if direction == "encode":
-    encrypt(text, shift)
-elif direction == "decode":
-    decrypt(text, shift)
+find_highest_bidder(bids)
